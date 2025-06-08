@@ -236,7 +236,7 @@ header {
   .video-overlay {
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* 50% black overlay */
+    background-color: rgba(0, 0, 0, 0.555); /* 50% black overlay */
     z-index: 1;
   }
   
@@ -254,6 +254,8 @@ header {
   }
   
   .video-content h1 {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+  
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -276,7 +278,53 @@ header {
 
 
 
-
+  @media (max-width: 768px) {
+    .video-hero {
+      height: 100vh;
+      position: relative;
+    }
+  
+    .video-hero video {
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+    }
+  
+    .video-content {
+      position: absolute; /* Ensure it's on top */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 0 16px;
+      width: 100%;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    .video-content h1 {
+        
+      font-size: 1.8rem;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+      color: white;
+    }
+  
+    .cta-button {
+      display: inline-block;
+      background-color: white;
+      color: black;
+      padding: 0.75rem 1.25rem;
+      font-size: 1rem;
+      border-radius: 9999px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+  
+    .cta-button:hover {
+      background-color: #e5e5e5;
+    }
+  }
+  
 
 
 
@@ -370,6 +418,7 @@ header {
     width: 100%;
     padding: 20px 0;
     overflow: hidden;
+    background-color: rgb(255, 255, 255);
 }
 
 .hero-grid {
