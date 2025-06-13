@@ -1,3 +1,299 @@
+
+
+
+
+    <section class="about-wrapper">
+      <!-- Row 1 -->
+      <div class="about-grid">
+        <div class="about-card about-intro">
+          <span class="tag">• About Us</span>
+          <h1>Gifts, Souvenirs & Awards.</h1>
+          <p>
+            At Spintell, we specialize in thoughtful gifts, unique souvenirs, and custom awards—helping you celebrate life’s special moments. 
+            Every item is carefully selected or crafted to inspire joy, pride, and lasting memories.
+
+          <br> Thank you for choosing us to be part of your celebrations.
+          </p>
+        </div>
+  
+        <div class="about-card stat-card">
+          <h2>300+</h2>
+          <p>Items Branded</p>
+          <button>Make an appointment →</button>
+        </div>
+  
+        <div class="about-card stat-card">
+          <h2>20+</h2>
+          <p>Deliveries</p>
+          <button>View full map →</button>
+        </div>
+  
+        <!-- Row 2 -->
+        <div class="about-card image-card">
+          <img src="images/hero3.jpg" alt="Couple camping">
+        </div>
+  
+        <div class="about-card stat-card customers">
+          <h2>1450+</h2>
+          <p>Customers</p>
+          <div class="avatars">
+            <img src="avatar1.jpg" alt="Customer 1">
+            <img src="avatar2.jpg" alt="Customer 2">
+            <img src="avatar3.jpg" alt="Customer 3">
+            <img src="avatar4.jpg" alt="Customer 4">
+            <img src="avatar5.jpg" alt="Customer 5">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.about-wrapper {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 100px 150px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+/* General card styling */
+.about-card {
+  background-color: #ecc6c6;
+  padding: 20px;
+  border-radius: 18px;
+
+
+}
+
+
+
+
+
+/* About Intro */
+.about-intro {
+  grid-column: span 2;
+  background-color: #5b6443;
+  color: white;
+}
+
+.about-intro .tag {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid white;
+  padding: 6px 12px;
+  border-radius: 25px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.about-intro h1 {
+  font-size: 24px;
+  margin: 10px 0 20px;
+  line-height: 1.4;
+}
+
+.about-intro p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Stat cards */
+.stat-card h2 {
+  font-size: 32px;
+  color: #5b6443;
+}
+
+.stat-card p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.stat-card button {
+  margin-top: 100px;
+  padding: 8px 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Image card */
+.image-card {
+  grid-column: span 3;
+  padding: 0;
+  background: none;
+  
+}
+
+
+
+.image-card img {
+  width: 100%; /* Make the image take the full width of the card */
+  height: 250px; /* Set the height to 200px */
+  object-fit: cover; /* Ensure the image is cropped to fit the space */
+  display: block; /* Remove any inline spacing */
+  border-radius: 20px; /* Keep the rounded corners */
+}
+
+/* Avatar group */
+.avatars {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.avatars img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 6px;
+}
+
+/* Responsive (Mobile/Tablet) */
+
+
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 40px 20px;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  .about-intro {
+    grid-column: span 2;
+  }
+
+  .image-card {
+    grid-column: span 2;
+  }
+
+  /* Make the customers card span both columns */
+  .about-card.stat-card.customers {
+    grid-column: span 2;
+  }
+
+  .stat-card button {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .avatars {
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+
+  .about-intro h1 {
+    font-size: 20px;
+  }
+
+  .about-intro p,
+  .stat-card p {
+    font-size: 13px;
+  }
+
+  .stat-card h2 {
+    font-size: 24px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -197,3 +493,27 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+margin: 2rem 25rem;
